@@ -1,0 +1,54 @@
+/* Navigation Bar Alignment */
+.navbar {
+    display: flex;                  /* 2. Enable Flexbox for layout control [cite: 2] */
+    justify-content: space-between; /* 3. Positions logo left and links right [cite: 3] */
+    align-items: center;            /* 3. Vertically centers the logo and text [cite: 4] */
+    padding: 1.5rem 8%;
+    background-color: #222;         /* Deep dark background for luxury feel [cite: 4] */
+    color: white;
+}
+
+.nav-links {
+    display: flex;                  /* 4. Aligns Home, About, etc. in a row [cite: 5] */
+    list-style: none;
+    gap: 30px;                      /* 4. Spacing between cosmetic categories [cite: 6] */
+}
+
+/* 4. Fix for Link Colors: Ensuring Home/About links stay white */
+.nav-links li a {
+    color: white;                   /* Overrides default browser blue [cite: 1, 13] */
+    text-decoration: none;          /* Removes underlines for a cleaner look [cite: 1, 13] */
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-links li a:visited {
+    color: white;                   /* Prevents purple color after clicking  */
+}
+
+/* Card Section Alignment */
+.card-container {
+    display: flex;                  /* 2. Enable Flexbox for card grouping [cite: 7] */
+    flex-direction: row;            /* 3. Aligns cosmetic cards in a row [cite: 7] */
+    flex-wrap: wrap;                /* 6. Allows cards to stack on mobile devices [cite: 9] */
+    justify-content: center;        /* 3. Centers cards on the page [cite: 10] */
+    padding: 60px 20px;
+    gap: 25px;
+}
+
+/* 5. Individual Cosmetic Product Cards */
+.card {
+    flex: 1 1 280px;                /* 8. Flexible sizing with 280px base width  */
+    min-height: 250px;
+    background-color: #fffafb;      /* Soft blush pink background */
+    border: 1px solid #eee;
+    padding: 20px;
+    display: flex;                  /* Internal flex for content alignment [cite: 13] */
+    flex-direction: column;         /* Stacks title and text vertically */
+    justify-content: center;        /* Centers text horizontally [cite: 13] */
+    align-items: center;            /* Centers text vertically [cite: 14] */
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
